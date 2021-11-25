@@ -51,3 +51,11 @@ Los bricks tienen su propio script, ellos son los que tienen que ser creados con
 Script: [scripts/UIControls.cs](scripts/UIControls.cs)
 
 Para poder manejar los inputs de usuarios tenemos la clase UIControls que gestiona la UI y tiene meotdos delegate para que los otros clases pueden suscribirse a eventos.
+
+## Complicaciones encontrados y conclusiones
+
+Una de las principales complicaciones estaba con cambiar entre el dictado y el keyword recognizer ya que son dos sistemas diferentes que no se pueden ejecutar al mismo tiempo. Pero como se puede comprobar en la version final funciona y se ha resuelto.
+
+Otro complicacion ha sido de crear los bricks debido a que no es tan directo como poner la textura a un char ya que espera una imagen, para resolver esto se crea unos planos grandes a las que asigna el character (a un tamano muy grande para tener un calidad aceptable) y una vez creado al cubo hacer un sclae para que queda al tamano deseado.
+
+En concusion, ya que el keyword recognizer es lento (puede depender del hardware pero en mi portatil es muy lento) no es optimo para la implementacion en juego donde se necesita cierta rapidez. 
