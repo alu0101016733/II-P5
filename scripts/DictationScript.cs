@@ -64,7 +64,9 @@ public class DictationScript : MonoBehaviour
         if (m_DictationRecognizer != null) {
             Debug.Log("Stop Dictation and free up resources");
             createBrickField();
-            m_DictationRecognizer.Stop();
+            if (m_DictationRecognizer.Status != SpeechSystemStatus.Stopped) {
+                 m_DictationRecognizer.Stop();
+            }
             m_DictationRecognizer.Dispose();  
         }
         m_DictationRecognizer = null;
