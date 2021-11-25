@@ -6,7 +6,7 @@ Objetivo El objetivo de esta práctica es aprender a utilizar las herramientas d
 
 Para la implementacion se han creado 6 scripts que controlan el juego. La logica de comunicacion a un nivel muy simplificado es:
 
-[gamelogic](img/brickBrakerLogic.png)
+![gamelogic](img/brickBrakerLogic.png)
 
 ### Reconozimiento de Palabras:
 
